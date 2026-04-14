@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-background: #0f1424;
+}
+
+body {
+    /* background-color: var(--color-background); */
+}
