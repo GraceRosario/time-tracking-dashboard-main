@@ -15,7 +15,7 @@ The designs were created to the following widths:
 
 - Purple 600: #5847eb
 
-- Orange 300 (work): hsl(15, 100%, 70%)
+- Orange 300 (work): #ff8c66
 - Blue 300 (play): hsl(195, 74%, 62%)
 - Pink 400 (study): hsl(348, 100%, 68%)
 - Green 400 (exercise): hsl(145, 58%, 55%)
