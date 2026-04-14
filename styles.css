@@ -1,13 +1,118 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 :root {
-    --color-background: #0f1424;
+  --color-background: #0f1424;
+
+  --color--accent-primary: #1c1f4a;
+  --color--accent-secondary: #5847eb;
+
+  --color-text: #bdc1ff;
+  --color--text-highlight: #ffffff;
 }
 
 body {
-    /* background-color: var(--color-background); */
+  background-color: var(--color-background);
+}
+
+main {
+  padding: 3rem 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: rubik, sans-serif;
+  background-color: var(--color-background);
+}
+
+/* user-card */
+
+.user-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid var(--color--text-highlight);
+  align-self: center;
+}
+
+.user-img-and-name {
+  background-color: var(--color--accent-secondary);
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.user-card {
+  background-color: var(--color--accent-primary);
+  color: var(--color-text);
+  font-weight: 300;
+}
+
+.user-card__name {
+  display: block;
+  color: var(--color--text-highlight);
+  font-size: 1.5rem;
+}
+
+.user-name {
+  align-self: center;
+}
+
+.user-card__filter {
+  margin: 1.75rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* productivity-card */
+
+.productivity-card {
+  background-color: var(--color--accent-primary);
+}
+
+.productivity-card__title,
+.productivity-card__current {
+  color: var(--color--text-highlight);
+}
+
+.productivity-card__previous {
+  color: var(--color-text);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* footer */
+
+footer {
+  padding: 1.5rem;
+  margin-top: auto;
+  color: #bdc1ff;
+  text-align: center;
+}
+
+footer a {
+  color: #7536d3;
+}
+
+/* utilities */
+
+.border-radius {
+  border-radius: 15px;
+}
+
+.filter:active,
+.filter:focus-visible {
+  color: var(--color--text-highlight);
+}
+
+.filter:hover {
+  cursor: pointer;
 }

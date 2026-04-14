@@ -21,27 +21,42 @@
     <title>Frontend Mentor | Time tracking dashboard</title>
   </head>
   <body>
-    <article class="user-card">
-      <span>Report for</span> <span class="user-card__name">Jeremy Robson</span>
-      <div class="user-card__filter">
-        <span>Daily</span>
-        <span>Weekly</span>
-        <span>Monthly</span>
-      </div>
-    </article>
+    <main>
+      <section class="card-container">
+        <article class="user-card border-radius">
+          <div class="user-img-and-name border-radius">
+            <img
+              src="./images/image-jeremy.png"
+              alt="Jeremy"
+              class="user-img"
+            />
+            <div class="user-name">
+              <span>Report for</span>
+              <span class="user-card__name">Jeremy Robson</span>
+            </div>
+          </div>
 
-    <article class="productivity-card">
-      <span class="productivity-card__title">Work</span>
+          <div class="user-card__filter">
+            <span class="filter">Daily</span>
+            <span class="filter">Weekly</span>
+            <span class="filter">Monthly</span>
+          </div>
+        </article>
 
-      <span class="productivity-card__current">5hrs</span>
-      <span class="productivity-card__previous">Previous - 7hrs</span>
-    </article>
+        <article class="productivity-card">
+          <span class="productivity-card__title">Work</span>
 
-    <div class="attribution">
+          <span class="productivity-card__current">5hrs</span>
+          <span class="productivity-card__previous">Previous - 7hrs</span>
+        </article>
+      </section>
+    </main>
+
+    <footer>
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Farha Shaikh</a>.
-    </div>
+    </footer>
   </body>
 </html>
