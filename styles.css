@@ -78,7 +78,7 @@ main {
 
 .productivity-card__content {
   width: 100%;
-  max-width: 274px;
+  /* max-width: 274px; */
   background-color: var(--color--accent-primary);
   display: grid;
   grid-template-columns: auto auto;
