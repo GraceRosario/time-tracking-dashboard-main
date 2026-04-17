@@ -16,11 +16,11 @@ The designs were created to the following widths:
 - Purple 600: #5847eb
 
 - Orange 300 (work): #ff8c66
-- Blue 300 (play): hsl(195, 74%, 62%)
-- Pink 400 (study): hsl(348, 100%, 68%)
-- Green 400 (exercise): hsl(145, 58%, 55%)
+- Blue 300 (play): #56c2e6
+- Pink 400 (study): #ff5c7c
+- Green 400 (exercise): #4acf81
 - Purple 700 (social): #7536d3
-- Yellow 300 (self care): hsl(43, 84%, 65%)
+- Yellow 300 (self care): #f1c65b
 
 ### Neutral
 
