@@ -53,12 +53,9 @@ main {
 
 .user-card {
   width: 100%;
-  min-width: 300px;
   background-color: var(--color--accent-primary);
   color: var(--color-text);
   font-weight: 300;
-  /* min-height: 500px;
-  height: 100%; */
 }
 
 .user-card__name {
@@ -209,11 +206,11 @@ footer a {
   /* fill: var(--color--text-highlight); */
 }
 
-.filter:active,
+/* .filter:active,
 .filter:hover .filter:focus-visible {
   color: var(--color--text-highlight);
   fill: var(--color--text-highlight);
-}
+} */
 
 .filter:hover,
 .menu {
