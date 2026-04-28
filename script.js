@@ -49,7 +49,7 @@ function makeCard(data, time) {
   
   productivityCardContainer.innerHTML = data
     .map((item) => {
-      return `<article class="productivity-card work">
+      return `<article class="productivity-card">
           <div class="productivity-card__pic border-radius" style="background-color: ${item["background-color"]};">
             <img src="${item.svg}" class="svg-img">
 

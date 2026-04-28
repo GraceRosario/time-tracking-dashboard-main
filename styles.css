@@ -211,7 +211,7 @@ footer a {
 }
 
 .filter:hover,
-.menu {
+.menu:hover {
   cursor: pointer;
 }
 
@@ -281,7 +281,7 @@ footer a {
     width: 100%;
     display: grid;
     grid-template-rows: repeat(2, auto);
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.75rem;
   }
 
