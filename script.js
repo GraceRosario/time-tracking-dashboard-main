@@ -1,7 +1,6 @@
 const productivityCardContainer = document.querySelector(
   ".productivity-card-container",
 );
-const activeState = document.querySelector(".active");
 const filterButton = document.querySelectorAll(".filter");
 const userCard = document.querySelector(".user-card");
 
@@ -16,38 +15,42 @@ async function getData() {
 
   makeCard(timeTracking, "daily");
 
-  filterButton.forEach((allButton) => {
-    allButton.addEventListener("click", (e) => {
+  filterButton.forEach((button) => {
+    /*
+    selects all the buttons with class filter.
+    */
+    button.addEventListener("click", (e) => {
       filterButton.forEach((clickedButton) => {
+        /*
+        selects button which is clicked and has class filter.
+        */
         clickedButton.classList.remove("active");
       });
-      allButton.classList.add("active");
 
-      let type = allButton.dataset.type;
+      button.classList.add("active");
+
+      let type = button.dataset.type;
       makeCard(timeTracking, type);
 
       console.log(type);
-    });
-
-    userCard.addEventListener("click", (e) => {
-      if (e.target.filterButton && !e.target.activeState) {
-        console.log("true");
-      }
     });
   });
 }
 
 getData();
 
-function makeCard(data, time) {
-  if (timeTracking === null) {
-    console.log("data is being loaded");
-  }
+const labels = {
+  daily: "Yesterday",
+  weekly: "Last Week",
+  monthly: "Last Month",
+};
 
+function makeCard(data, time) {
+  
   productivityCardContainer.innerHTML = data
     .map((item) => {
       return `<article class="productivity-card work">
-          <div class="productivity-card__pic border-radius" style="background-color: ${item.color};">
+          <div class="productivity-card__pic border-radius" style="background-color: ${item["background-color"]};">
             <img src="${item.svg}" class="svg-img">
 
             <div class="productivity-card__content border-radius">
@@ -62,7 +65,7 @@ function makeCard(data, time) {
                 />
               </svg>
               <span class="productivity-card__current">${item.timeframes[time].current}hrs</span>
-              <span class="productivity-card__previous">Last Week - ${item.timeframes[time].previous}hrs</span>
+              <span class="productivity-card__previous">${labels[time]} - ${item.timeframes[time].previous}hrs</span>
             </div>
           </div>
         </article>`;
