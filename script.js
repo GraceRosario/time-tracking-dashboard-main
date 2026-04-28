@@ -1,7 +1,7 @@
 const productivityCardContainer = document.querySelector(
   ".productivity-card-container",
 );
-const active = document.querySelector('.active')
+const activeState = document.querySelector(".active");
 const filterButton = document.querySelectorAll(".filter");
 const userCard = document.querySelector(".user-card");
 
@@ -16,14 +16,23 @@ async function getData() {
 
   makeCard(timeTracking, "daily");
 
-  filterButton.forEach((Button) => {
-    Button.addEventListener("click", (e) => {
-      Button.classList.add("active");
+  filterButton.forEach((allButton) => {
+    allButton.addEventListener("click", (e) => {
+      filterButton.forEach((clickedButton) => {
+        clickedButton.classList.remove("active");
+      });
+      allButton.classList.add("active");
 
-      let type = Button.dataset.type;
+      let type = allButton.dataset.type;
       makeCard(timeTracking, type);
 
       console.log(type);
+    });
+
+    userCard.addEventListener("click", (e) => {
+      if (e.target.filterButton && !e.target.activeState) {
+        console.log("true");
+      }
     });
   });
 }

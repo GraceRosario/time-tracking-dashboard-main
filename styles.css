@@ -200,22 +200,27 @@ footer a {
   border-radius: 15px;
 }
 
-.active {
-  color: var(--color--text-highlight);
-  cursor: pointer;
-  /* fill: var(--color--text-highlight); */
-}
-
 /* .filter:active,
 .filter:hover .filter:focus-visible {
   color: var(--color--text-highlight);
   fill: var(--color--text-highlight);
 } */
 
+.filter {
+  color: var(--color-text);
+}
+
 .filter:hover,
 .menu {
   cursor: pointer;
 }
+
+.active {
+  color: var(--color--text-highlight);
+  cursor: pointer;
+  /* fill: var(--color--text-highlight); */
+}
+
 
 @media (min-width: 900px) {
   .card-container {
