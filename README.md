@@ -11,11 +11,7 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-  - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -53,4 +49,3 @@ This project helped me move from static layouts to building a dynamic, data-driv
 ## Author
 
 - Frontend Mentor - [@GraceRosario](https://www.frontendmentor.io/profile/GraceRosario)
-
